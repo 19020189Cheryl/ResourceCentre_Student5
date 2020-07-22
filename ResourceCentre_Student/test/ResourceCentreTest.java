@@ -54,7 +54,7 @@ public class ResourceCentreTest {
 		// write your code here
 		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
 		
-		//Given an empty list, after adding 1 item, the size of the list is 1
+		//Given an empty list, after adding 1 item, the size of the list is 1 
 		ResourceCentre.addChromebook(chromebookList, cb1);		
 		assertEquals("Test if that Chromebook arraylist size is 1?", 1, chromebookList.size());
 		
