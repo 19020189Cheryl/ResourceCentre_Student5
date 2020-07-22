@@ -110,7 +110,13 @@ public class ResourceCentreTest {
 	public void doLoanCamcorderTest() {
 		//fail("Not yet implemented");
 		// write your code here
+		// Test if Item list is not null but empty, so that can add a new item
+		assertNotNull("Test if there is valid Chromebook arraylist to loan to", chromebookList);
 		
+		//Given an empty list, after loaning 2 items, test if the size of the list is 2
+		ResourceCentre.LoanCamcorder(camcorderList, cc1);
+		ResourceCentre.addCamcorder(camcorderList, cc2);
+		assertEquals("Test if that Camcorder arraylist size is 2?", 2, camcorderList.size());
 	}
 	
 	@Test
